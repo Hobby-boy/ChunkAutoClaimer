@@ -1,0 +1,32 @@
+name: ChunkAutoClaimer
+main: biz.sebbe.ChunkAutoClaimer.ChunkAutoClaimer
+version: 1.8
+author: sebastiannielsenrobin
+website: chunkautoclaimer.sebbe.biz
+database: false
+commands:
+   chk:
+      description: Checks the chunk you are standing on.
+      usage: Just type /chk .
+   add:
+      description: Adds a friend to your friendslist
+      usage: /add <name of friend>
+   del:
+      description: Removes a friend from your friendslist.
+      usage: /del <name> - Omit <name> to clear friendslist.
+   set:
+      description: OP_ONLY Sets/changes owner of chunk
+      usage: /set <name> - Omit to unprotect chunk.
+   reset:
+      description: Clears/move to <name2> your/<name>'s CAC profile.
+      usage: /reset <name> <name2> - Omit names to clear your profile.
+   walktest:
+      description: Toggles protection of claims from yourself.
+      usage: just type /walktest to toggle.
+permissions:
+   chunkautoclaimer.op:
+      description: Allows access to all OP commands in CAC and allows bypassing of antigrief.
+      default: false
+   chunkautoclaimer.unlimited:
+      description: Bypasses limits, so these players can have unlimited claims, friends and does not need to claim adjacent.
+      default: false
